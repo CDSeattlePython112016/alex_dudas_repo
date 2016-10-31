@@ -1,4 +1,4 @@
-import math, random
+import math, random, datetime
 
 numbers = []
 
@@ -14,8 +14,10 @@ def numberGen():
     for i in range(100):
         numbers.append(random.randint(0,10000))
 
+print(datetime.datetime.now())
 numberGen()
 
 bubbleSort(numbers)
+print(datetime.datetime.now())
 
 print(numbers)
